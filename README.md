@@ -4,7 +4,7 @@ Helpful Sublime Text 3 ExpressionEngine Snippets
 
 ## Installation
 ```
-cd [Sublime Text Locaton]\Packages\User
+cd [Sublime Text Location]\Packages\User
 git clone git@github.com:eecoder/eesnippets.git
 ```
 
