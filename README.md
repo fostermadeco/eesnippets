@@ -10,32 +10,63 @@ git clone git@github.com:eecoder/eesnippets.git
 ```
 
 ## Available Snippets
+* [Addons](#addons)
+    * [ee:mod - Addon Module Class](#mod)
+    * [ee:mcp - Addon Control Panel Class](#mcp)
+    * [ee:upd - Addon Install/Update Class](#upd)
+* [Template](#template)
+    * [ee:entries - Entry tag loop](#entries)
 
-### Addon Module Class
+==============
+
+<a name="addons"/>
+### Addons
+
+<a name="mod"/>
+#### Addon Module Class
 
 ```
 ee:mod
 ```
 
 __Trigger:__ `[tab]`
-__Arguments:__ `class name`
+__Arguments:__ `class name (string)`
 
-### Addon Control Panel Class
+<a name="mcp"/>
+#### Addon Control Panel Class
 
 ```
 ee:mcp
 ```
 
 __Trigger:__ `[tab]`
-__Arguments:__ `class name`
+__Arguments:__ `class name (string)`
 
-### Addon Install/Update Class
+<a name="upd"/>
+#### Addon Install/Update Class
 
 ```
 ee:upd
 ```
 
 __Trigger:__ `[tab]`
-__Arguments:__ `class name`
+__Arguments:__ `class name (string)`
+
+==============
+
+<a name="template"/>
+### Template
+
+<a name="entries"/>
+#### Entries Tag Loop
+
+```
+ee:entries
+```
+
+__Trigger:__ `[tab]`
+__Arguments:__ `channel name (string), limit (int)`
+
+==============
 
 # MORE TO COME :D
