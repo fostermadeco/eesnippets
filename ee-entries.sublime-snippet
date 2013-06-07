@@ -1,0 +1,7 @@
+<snippet>
+    <content><![CDATA[
+{exp:channel:entries channel="${1}" limit="${2}"}
+{/exp:channel:entries}
+]]></content>
+    <tabTrigger>ee:entries</tabTrigger>
+</snippet>
