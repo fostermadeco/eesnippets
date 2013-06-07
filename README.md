@@ -1,5 +1,4 @@
 # eesnippets
-==============
 
 Helpful Sublime Text 3 ExpressionEngine Snippets
 
@@ -32,6 +31,8 @@ ee:mod
 __Trigger:__ `[tab]`
 __Arguments:__ `class name (string)`
 
+***
+
 <a name="mcp"/>
 #### Addon Control Panel Class
 
@@ -42,6 +43,8 @@ ee:mcp
 __Trigger:__ `[tab]`
 __Arguments:__ `class name (string)`
 
+***
+
 <a name="upd"/>
 #### Addon Install/Update Class
 
@@ -51,6 +54,8 @@ ee:upd
 
 __Trigger:__ `[tab]`
 __Arguments:__ `class name (string)`
+
+***
 
 ==============
 
@@ -67,6 +72,6 @@ ee:entries
 __Trigger:__ `[tab]`
 __Arguments:__ `channel name (string), limit (int)`
 
-==============
+***
 
 # MORE TO COME :D
