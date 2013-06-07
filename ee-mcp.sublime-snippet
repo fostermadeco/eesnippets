@@ -1,0 +1,31 @@
+<snippet>
+    <content><![CDATA[
+<?php
+
+// you may want to include the front module class
+// include_once( dirname(__FILE__) . '/mod.${1}.php' );
+
+/*
+ *  Docblock
+ */
+class ${1}_mcp {
+
+    function __construct() {
+        //if there is no session id, start a session
+        if( ! session_id( ) ) { session_start(); }
+
+        //Get the expression engine super object
+        $this->EE = get_instance();
+    }
+
+    /*
+     * Index view of the module's control panel
+     */
+    public function index() {
+        return true;
+    }
+
+}
+]]></content>
+    <tabTrigger>ee:mcp</tabTrigger>
+</snippet>
