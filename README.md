@@ -1,4 +1,4 @@
-eesnippets
+# eesnippets
 ==============
 
 Helpful Sublime Text 3 ExpressionEngine Snippets
