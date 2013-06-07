@@ -1,0 +1,79 @@
+<snippet>
+    <content><![CDATA[
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class $1_upd {
+
+    public $version = '1.0.0';
+
+    function __construct() {
+        // Make a local reference to the ExpressionEngine super object
+        $this->EE = get_instance();
+
+        // Load dbForge
+        $this->EE->load->dbforge();
+    }
+
+    function install() {
+
+        $data = array(
+            'module_name' => '$1' ,
+            'module_version' => $this->version,
+            'has_cp_backend' => 'y',
+            'has_publish_fields' => 'n'
+        );
+        $this->EE->db->insert('modules', $data);
+
+        //list of the available action methods
+        $action_methods = array( );
+        foreach( $action_methods as $method ) {
+            $data = array(
+                'class'     => '$1' ,
+                'method'    => $method
+            );
+            $this->EE->db->insert('actions', $data);
+        }
+
+        // Create DB tables
+
+        return TRUE;
+   }
+
+    function uninstall() {
+        $this->EE->db->where('module_name', '$1');
+        $this->EE->db->delete('modules');
+
+        $this->EE->db->where('class', '$1');
+        $this->EE->db->delete('actions');
+
+        //remove tables
+
+        return TRUE;
+    }
+
+    /*
+    * Update function
+    * Returns (bool)
+    */
+    function update($current = '')
+    {
+        if($current == '' OR $current == $this->version)
+        {
+            return FALSE;
+        }
+
+        /*
+        * 1.0.1 Update
+        * Adds shipping field
+        */
+        /*if (version_compare($current, "1.0.1", '<'))
+        {
+          Update stuffs
+        }*/
+
+        return TRUE;
+    }
+}
+]]></content>
+    <tabTrigger>ee:upd</tabTrigger>
+</snippet>
