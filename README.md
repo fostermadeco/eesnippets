@@ -18,3 +18,5 @@ ee:upd
 
 __Trigger:__ `[tab]`
 __Arguments:__ `class name`
+
+# MORE TO COME :D
