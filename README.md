@@ -3,7 +3,15 @@ eesnippets
 
 Helpful Sublime Text 3 ExpressionEngine Snippets
 
-## Addon Install/Update Class
+## Installation
+```
+cd [Sublime Text Locaton]\Packages\User
+git clone git@github.com:eecoder/eesnippets.git
+```
+
+## Available Snippets
+
+### Addon Install/Update Class
 ```
 ee:upd
 ```
