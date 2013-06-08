@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[
+<link rel="stylesheet" type="text/css" media="all" href="{stylesheet='${1}'}" />
+]]></content>
+    <tabTrigger>ee:style</tabTrigger>
+</snippet>

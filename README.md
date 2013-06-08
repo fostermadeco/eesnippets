@@ -15,6 +15,8 @@ git clone git@github.com:eecoder/eesnippets.git
     * [ee:upd - Addon Install/Update Class](#upd)
 * [Template](#template)
     * [ee:entries - Entry tag loop](#entries)
+* [Stylesheet](#stylesheet)
+    * [ee:style - Stylesheet tag](#style)
 
 ==============
 
@@ -71,6 +73,21 @@ ee:entries
 
 __Trigger:__ `[tab]`
 __Arguments:__ `channel name (string), limit (int)`
+
+==============
+
+<a name="stylesheet"/>
+### Stylesheet
+
+<a name="style"/>
+#### Style
+
+```
+ee:style
+```
+
+__Trigger:__ `[tab]`
+__Arguments:__ `fine name`
 
 ***
 
