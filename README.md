@@ -13,6 +13,8 @@ git clone git@github.com:eecoder/eesnippets.git
     * [ee:mod - Addon Module Class](#mod)
     * [ee:mcp - Addon Control Panel Class](#mcp)
     * [ee:upd - Addon Install/Update Class](#upd)
+* [Date](#date)
+    * [ee:now - Get the current date](#now)
 * [Template](#template)
     * [ee:entries - Entry tag loop](#entries)
 * [Stylesheet](#stylesheet)
@@ -61,18 +63,20 @@ __Arguments:__ `class name (string)`
 
 ==============
 
-<a name="template"/>
-### Template
+<a name="Date"/>
+### Date
 
-<a name="entries"/>
-#### Entries Tag Loop
+<a name="biw"/>
+#### Now
 
 ```
-ee:entries
+ee:now
 ```
 
 __Trigger:__ `[tab]`
-__Arguments:__ `channel name (string), limit (int)`
+__Arguments:__ `date format (see php's date)`
+
+***
 
 ==============
 
@@ -87,7 +91,24 @@ ee:style
 ```
 
 __Trigger:__ `[tab]`
-__Arguments:__ `fine name`
+__Arguments:__ `file name`
+
+***
+
+==============
+
+<a name="template"/>
+### Template
+
+<a name="entries"/>
+#### Entries Tag Loop
+
+```
+ee:entries
+```
+
+__Trigger:__ `[tab]`
+__Arguments:__ `channel name (string), limit (int)`
 
 ***
 

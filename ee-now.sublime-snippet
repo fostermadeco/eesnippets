@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[
+{current_time format="${1}"}
+]]></content>
+    <tabTrigger>ee:now</tabTrigger>
+</snippet>
