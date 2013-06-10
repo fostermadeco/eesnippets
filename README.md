@@ -16,6 +16,7 @@ git clone git@github.com:eecoder/eesnippets.git
 * [Date](#date)
     * [ee:now - Get the current date](#now)
 * [Template](#template)
+    * [ee:embed - Embed another template](#embed)
     * [ee:entries - Entry tag loop](#entries)
 * [Stylesheet](#stylesheet)
     * [ee:style - Stylesheet tag](#style)
@@ -99,6 +100,18 @@ __Arguments:__ `file name`
 
 <a name="template"/>
 ### Template
+
+<a name="entries"/>
+#### Embed template
+
+```
+ee:embed
+```
+
+__Trigger:__ `[tab]`
+__Arguments:__ `file path`
+
+***
 
 <a name="entries"/>
 #### Entries Tag Loop

@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[
+{embed="${1}"}
+]]></content>
+    <tabTrigger>ee:embed</tabTrigger>
+</snippet>
