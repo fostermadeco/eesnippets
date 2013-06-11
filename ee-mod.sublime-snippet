@@ -3,11 +3,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 if( ! function_exists( 'module_autoload' )) {
-    function module_autoload( $className ) {
-        $className = strtolower( $className );
-        $file = PATH_THIRD . "$className/mod.$className.php";
-        if( file_exists( $file )) {
-            include_once( $file );
+    function module_autoload( \$className ) {
+        \$className = strtolower( \$className );
+        \$file = PATH_THIRD . "\$className/mod.\$className.php";
+        if( file_exists( \$file )) {
+            include_once( \$file );
         }
     }
     spl_autoload_register( 'module_autoload' );
@@ -24,7 +24,7 @@ class ${1} {
         if( ! session_id()) { session_start(); }
 
         // Make a local reference to the ExpressionEngine super object
-        $this->EE = get_instance();
+        \$this->EE = get_instance();
     }
 
 }

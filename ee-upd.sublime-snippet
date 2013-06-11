@@ -7,34 +7,34 @@
  */
 class $1_upd {
 
-    public $version = '1.0.0';
+    public \$version = '1.0.0';
 
     function __construct() {
         // Make a local reference to the ExpressionEngine super object
-        $this->EE = get_instance();
+        \$this->EE = get_instance();
 
         // Load dbForge
-        $this->EE->load->dbforge();
+        \$this->EE->load->dbforge();
     }
 
     function install() {
 
-        $data = array(
+        \$data = array(
             'module_name' => '$1' ,
-            'module_version' => $this->version,
+            'module_version' => \$this->version,
             'has_cp_backend' => 'y',
             'has_publish_fields' => 'n'
         );
-        $this->EE->db->insert('modules', $data);
+        \$this->EE->db->insert('modules', \$data);
 
         //list of the available action methods
-        $action_methods = array( );
-        foreach( $action_methods as $method ) {
-            $data = array(
+        \$action_methods = array( );
+        foreach(\$action_methods as \$method) {
+            \$data = array(
                 'class'     => '$1' ,
-                'method'    => $method
+                'method'    => \$method
             );
-            $this->EE->db->insert('actions', $data);
+            \$this->EE->db->insert('actions', \$data);
         }
 
         // Create DB tables
@@ -43,11 +43,11 @@ class $1_upd {
    }
 
     function uninstall() {
-        $this->EE->db->where('module_name', '$1');
-        $this->EE->db->delete('modules');
+        \$this->EE->db->where('module_name', '$1');
+        \$this->EE->db->delete('modules');
 
-        $this->EE->db->where('class', '$1');
-        $this->EE->db->delete('actions');
+        \$this->EE->db->where('class', '$1');
+        \$this->EE->db->delete('actions');
 
         //remove tables
 
@@ -58,9 +58,9 @@ class $1_upd {
     * Update function
     * Returns (bool)
     */
-    function update($current = '')
+    function update(\$current = '')
     {
-        if($current == '' OR $current == $this->version)
+        if(\$current == '' OR $current == \$this->version)
         {
             return FALSE;
         }
@@ -69,7 +69,7 @@ class $1_upd {
         * 1.0.1 Update
         * Adds shipping field
         */
-        /*if (version_compare($current, "1.0.1", '<'))
+        /*if (version_compare(\$current, "1.0.1", '<'))
         {
           Update stuffs
         }*/
