@@ -15,6 +15,9 @@ git clone git@github.com:eecoder/eesnippets.git
     * [ee:upd - Addon Install/Update Class](#upd)
 * [Date](#date)
     * [ee:now - Get the current date](#now)
+* [Minimee](#minimee) __extension__
+    * [ee:minimee-css - Minimee css snippet](#minimee-css)
+    * [ee:minimee-js - Minimee js snippet](#minimee-js)
 * [Template](#template)
     * [ee:embed - Embed another template](#embed)
     * [ee:entries - Entry tag loop](#entries)
@@ -67,7 +70,7 @@ __Arguments:__ `class name (string)`
 <a name="Date"/>
 ### Date
 
-<a name="biw"/>
+<a name="now"/>
 #### Now
 
 ```
@@ -76,6 +79,35 @@ ee:now
 
 __Trigger:__ `[tab]`
 __Arguments:__ `date format (see php's date)`
+
+***
+
+==============
+
+<a name="minimee"/>
+### Minimee
+
+<a name="minimee-css"/>
+#### Minimee CSS snippet
+
+```
+ee:minimee-css
+```
+
+__Trigger:__ `[tab]`
+__Arguments:__ `disable (Y|N), minify (Y|N), combine (Y|N)`
+
+***
+
+<a name="minimee-js"/>
+#### Minimee JS snippet
+
+```
+ee:minimee-js
+```
+
+__Trigger:__ `[tab]`
+__Arguments:__ `disable (Y|N), minify (Y|N), combine (Y|N)`
 
 ***
 
