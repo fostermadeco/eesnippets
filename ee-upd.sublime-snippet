@@ -2,14 +2,39 @@
     <content><![CDATA[
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-/*
- *  Docblock
+/**
+ *
+ *
+ * @author      Visual Chefs
+ * @copyright   (C) 2013. All rights reserved.
+ * @version     1.0
+ */
+
+/**
+ *
+ *
+ * @category
+ * @package     ${1}
+ * @subpackage
+ * @since       1.0
  */
 class $1_upd {
 
+    /**
+     * The current version number of the plugin.
+     *
+     * @var     string
+     * @access  public
+     */
     public \$version = '1.0.0';
 
-    function __construct() {
+    /**
+     * Constructor
+     *
+     * @return void
+     * @access public
+     */
+    public function __construct() {
         // Make a local reference to the ExpressionEngine super object
         \$this->EE = get_instance();
 
@@ -17,7 +42,13 @@ class $1_upd {
         \$this->EE->load->dbforge();
     }
 
-    function install() {
+    /**
+     * The method to handle installing the plugin.
+     *
+     * @return boolean
+     * @access public
+     */
+    public function install() {
 
         \$data = array(
             'module_name' => '$1' ,
@@ -27,7 +58,7 @@ class $1_upd {
         );
         \$this->EE->db->insert('modules', \$data);
 
-        //list of the available action methods
+        // list of the available action methods
         \$action_methods = array( );
         foreach(\$action_methods as \$method) {
             \$data = array(
@@ -42,7 +73,13 @@ class $1_upd {
         return TRUE;
    }
 
-    function uninstall() {
+    /**
+     * The method to handle installing the plugin.
+     *
+     * @return boolean
+     * @access public
+     */
+    public function uninstall() {
         \$this->EE->db->where('module_name', '$1');
         \$this->EE->db->delete('modules');
 
@@ -54,11 +91,13 @@ class $1_upd {
         return TRUE;
     }
 
-    /*
-    * Update function
-    * Returns (bool)
-    */
-    function update(\$current = '')
+    /**
+     * The method to handle installing the plugin.
+     *
+     * @return boolean
+     * @access public
+     */
+    public function update(\$current = '')
     {
         if(\$current == '' OR $current == \$this->version)
         {
