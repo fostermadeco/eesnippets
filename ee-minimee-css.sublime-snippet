@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+{exp:minimee:css disable="${1:n}" minify="${2:y}" combine="${3:y}"}
+    <link type="text/css" rel="stylesheet" media="screen" href="${4}" />
+{/exp:minimee:css}
+]]></content>
+    <tabTrigger>ee:minimee-css</tabTrigger>
+</snippet>

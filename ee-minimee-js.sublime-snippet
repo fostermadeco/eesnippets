@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+{exp:minimee:js disable="${1:n}" minify="${2:y}" combine="${3:y}"}
+    <script src="${4:http://code.jquery.com/jquery-latest.min.js}" type="text/javascript"></script>
+{/exp:minimee:js}
+]]></content>
+    <tabTrigger>ee:minimee-js</tabTrigger>
+</snippet>
