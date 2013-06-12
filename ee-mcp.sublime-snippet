@@ -2,15 +2,18 @@
     <content><![CDATA[
 <?php
 
-// you may want to include the front module class
-// include_once( dirname(__FILE__) . '/mod.${1}.php' );
-
 /*
  *  Docblock
  */
 class ${1}_mcp {
 
-    function __construct() {
+    /**
+     * Constructor
+     *
+     * @return void
+     * @access public
+     */
+    public function __construct() {
         //if there is no session id, start a session
         if( ! session_id( ) ) { session_start(); }
 
@@ -18,8 +21,11 @@ class ${1}_mcp {
         \$this->EE = get_instance();
     }
 
-    /*
-     * Index view of the module's control panel
+    /**
+     * The main index action of the control panel.
+     *
+     * @return boolean
+     * @access public
      */
     public function index() {
         return true;
