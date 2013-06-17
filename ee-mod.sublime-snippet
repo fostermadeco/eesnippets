@@ -20,18 +20,11 @@ if( ! function_exists( 'module_autoload' )) {
 /**
  *
  *
- * @author      Visual Chefs
- * @copyright   (C) 2013. All rights reserved.
- * @version     1.0
- */
-
-/**
- *
- *
- * @category
  * @package     ${1}
- * @subpackage
- * @since       1.0
+ * @subpackage  ThirdParty
+ * @category
+ * @author
+ * @link        http://www.eecoder.com
  */
 class ${1} {
 
