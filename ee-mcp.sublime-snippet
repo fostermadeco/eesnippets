@@ -20,9 +20,6 @@ class ${1}_mcp {
      * @access public
      */
     public function __construct() {
-        //if there is no session id, start a session
-        if( ! session_id( ) ) { session_start(); }
-
         //Get the expression engine super object
         \$this->EE = get_instance();
     }
