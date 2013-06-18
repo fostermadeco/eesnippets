@@ -19,6 +19,7 @@ git clone git@github.com:eecoder/eesnippets.git
     * [ee:minimee-css - Minimee css snippet](#minimee-css)
     * [ee:minimee-js - Minimee js snippet](#minimee-js)
 * [Template](#template)
+    * [ee:comment - Template Comment](#comment)
     * [ee:embed - Embed another template](#embed)
     * [ee:entries - Entry tag loop](#entries)
 * [Stylesheet](#stylesheet)
@@ -132,6 +133,18 @@ __Arguments:__ `file name`
 
 <a name="template"/>
 ### Template
+
+<a name="comment"/>
+#### Template Comment
+
+```
+ee:comment
+```
+
+__Trigger:__ `[tab]`
+__Arguments:__ `your comment`
+
+***
 
 <a name="entries"/>
 #### Embed template
