@@ -142,7 +142,7 @@ ee:comment
 ```
 
 __Trigger:__ `[tab]`
-__Arguments:__ `your comment`
+__Arguments:__ `your comment, file location`
 
 ***
 
